@@ -1,25 +1,25 @@
-1 const resultInput = document.getElementById('result');
-    2 
-    3 function appendNumber(number) {
-    4     resultInput.value += number;
-    5 }
-    6 
-    7 function appendOperator(operator) {
-    8     resultInput.value += operator;
-    9 }
-   10 
-   11 function calculateResult() {
-   12     try {
-   13         resultInput.value = eval(resultInput.value);
-   14     } catch (error) {
-   15         resultInput.value = 'Error';
-   16     }
-   17 }
-   18 
-   19 function clearResult() {
-   20     resultInput.value = '';
-   21 }
-   22 
-   23 function deleteLastChar() {
-   24     resultInput.value = resultInput.value.slice(0, -1);
-   25 }
+ const resultInput = document.getElementById('result');
+ 
+ function appendNumber(number) {
+     resultInput.value += number;
+ }
+ 
+ function appendOperator(operator) {
+     resultInput.value += operator;
+ }
+ 
+ function calculateResult() {
+     try {
+         resultInput.value = eval(resultInput.value);
+     } catch (error) {
+         resultInput.value = 'Error';
+     }
+ }
+ 
+ function clearResult() {
+     resultInput.value = '';
+ }
+ 
+ function deleteLastChar() {
+     resultInput.value = resultInput.value.slice(0, -1);
+ }
