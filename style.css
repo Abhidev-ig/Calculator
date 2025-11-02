@@ -1,0 +1,48 @@
+
+    1 .calculator {
+    2     width: 300px;
+    3     margin: 100px auto;
+    4     border: 1px solid #ccc;
+    5     border-radius: 5px;
+    6     padding: 10px;
+    7     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    8 }
+    9 
+   10 .display {
+   11     background-color: #f9f9f9;
+   12     padding: 10px;
+   13     border-radius: 5px;
+   14     margin-bottom: 10px;
+   15 }
+   16 
+   17 .display input {
+   18     width: 100%;
+   19     border: none;
+   20     background-color: transparent;
+   21     font-size: 24px;
+   22     text-align: right;
+   23 }
+   24 
+   25 .keys {
+   26     display: grid;
+   27     grid-template-columns: repeat(4, 1fr);
+   28     grid-gap: 5px;
+   29 }
+   30 
+   31 .keys button {
+   32     padding: 15px;
+   33     font-size: 18px;
+   34     border: 1px solid #ccc;
+   35     border-radius: 5px;
+   36     cursor: pointer;
+   37     background-color: #fff;
+   38 }
+   39 
+   40 .keys button:hover {
+   41     background-color: #f0f0f0;
+   42 }
+
+ 
+   23 function deleteLastChar() {
+   24     resultInput.value = resultInput.value.slice(0, -1);
+   25 }
